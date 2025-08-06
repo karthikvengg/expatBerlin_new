@@ -57,10 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        eurocas: {
-          orange: "#FF6500",
-          "orange-light": "#FF8533",
-          "orange-dark": "#E55A00",
+        expatberlin: {
+          primary: "#6366f1",
+          "primary-light": "#818cf8",
+          "primary-dark": "#4f46e5",
+          secondary: "#06b6d4",
+          "secondary-light": "#67e8f9",
+          "secondary-dark": "#0891b2",
         },
       },
       borderRadius: {

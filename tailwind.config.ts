@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        eurocas: {
+          orange: "#FF6500",
+          "orange-light": "#FF8533",
+          "orange-dark": "#E55A00",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

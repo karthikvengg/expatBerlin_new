@@ -7,12 +7,11 @@ export function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="bg-expatberlin-primary px-3 py-1 rounded">
-              <span className="text-white font-bold text-lg">expatBerlin</span>
-            </div>
-            <span className="ml-2 text-sm text-gray-600 font-medium">
-              RELOCATION & SERVICES
-            </span>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F439caad0b8bf4cb493673255e1deb89a%2Fafcd8af918034b13a3833edc397feec1?format=webp&width=800"
+              alt="expatBerlin Logo"
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Navigation */}

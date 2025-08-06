@@ -8,24 +8,24 @@ export function HeroSection() {
           {/* Left Content */}
           <div className="space-y-6">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              Your Trusted Partner for Healthcare Recruitment in{" "}
-              <span className="text-eurocas-orange">Germany</span>
+              Your Trusted Partner for Expat Life in{" "}
+              <span className="text-expatberlin-primary">Berlin</span>
             </h1>
             
             <p className="text-lg text-gray-700 leading-relaxed">
-              At Eurocas, we help skilled healthcare professionals, including nurses and 
-              physiotherapists, find fulfilling career opportunities in Germany. Our 
-              comprehensive services ensure a smooth transition, from language training 
-              to job placement and visa support.
+              At expatBerlin, we help international professionals and families
+              navigate their relocation to Berlin. Our comprehensive services ensure
+              a smooth transition, from housing and visa support to language courses
+              and local integration assistance.
             </p>
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="bg-eurocas-orange hover:bg-eurocas-orange-dark text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors">
-                Enquire Now
+              <button className="bg-expatberlin-primary hover:bg-expatberlin-primary-dark text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors">
+                Get Started
               </button>
               
               {/* Airplane Icon */}
-              <div className="text-eurocas-orange">
+              <div className="text-expatberlin-secondary">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" className="rotate-45">
                   <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
                 </svg>
@@ -36,9 +36,9 @@ export function HeroSection() {
           {/* Right Content - Video Thumbnail */}
           <div className="relative">
             <div className="bg-gray-200 rounded-lg overflow-hidden aspect-video">
-              <img 
-                src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=600&h=400&fit=crop"
-                alt="Healthcare professional consultation"
+              <img
+                src="https://images.unsplash.com/photo-1527838832700-5059252407fa?w=600&h=400&fit=crop"
+                alt="Berlin cityscape and expat life"
                 className="w-full h-full object-cover"
               />
               
@@ -63,11 +63,11 @@ export function HeroSection() {
               
               {/* Logo Overlay */}
               <div className="absolute top-4 right-4">
-                <div className="bg-eurocas-orange px-2 py-1 rounded text-white text-xs font-bold">
-                  EUROCAS
+                <div className="bg-expatberlin-primary px-2 py-1 rounded text-white text-xs font-bold">
+                  expatBerlin
                 </div>
                 <div className="text-xs text-white bg-black/50 px-1 rounded-b">
-                  CAREER & SCHOOLING
+                  RELOCATION & SERVICES
                 </div>
               </div>
             </div>

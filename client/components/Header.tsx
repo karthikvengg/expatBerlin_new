@@ -12,7 +12,7 @@ export function Header() {
               alt="expatBerlin Logo"
               className="h-10 w-auto"
             />
-            <span className="ml-3 text-white font-bold text-xl">patBerlin</span>
+            <span className="ml-1 text-white font-bold text-xl">patBerlin</span>
           </Link>
 
           {/* Navigation */}

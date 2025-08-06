@@ -8,7 +8,7 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F439caad0b8bf4cb493673255e1deb89a%2Fafcd8af918034b13a3833edc397feec1?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2F439caad0b8bf4cb493673255e1deb89a%2F155109982c6d422aba193d15b5481e2d?format=webp&width=800"
               alt="expatBerlin Logo"
               className="h-10 w-auto"
             />

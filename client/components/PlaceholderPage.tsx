@@ -23,7 +23,7 @@ export function PlaceholderPage({ title, description }: PlaceholderPageProps) {
             <p className="text-gray-600 mb-6">
               This page is under development. Please continue prompting to help us build out the content for this section.
             </p>
-            <div className="inline-flex items-center px-4 py-2 bg-eurocas-orange text-white rounded-lg">
+            <div className="inline-flex items-center px-4 py-2 bg-expatberlin-primary text-white rounded-lg">
               <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
               </svg>

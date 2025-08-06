@@ -19,12 +19,10 @@ export function HeroSection() {
               to job placement and visa support.
             </p>
             
-            <div className="flex items-center space-x-4">
-              <Button 
-                className="bg-eurocas-orange hover:bg-eurocas-orange-dark text-white px-8 py-3 rounded-full text-lg font-semibold"
-              >
+            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <button className="bg-eurocas-orange hover:bg-eurocas-orange-dark text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors">
                 Enquire Now
-              </Button>
+              </button>
               
               {/* Airplane Icon */}
               <div className="text-eurocas-orange">

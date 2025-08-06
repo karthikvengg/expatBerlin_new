@@ -6,7 +6,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-end">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F439caad0b8bf4cb493673255e1deb89a%2F155109982c6d422aba193d15b5481e2d?format=webp&width=800"
               alt="expatBerlin Logo"

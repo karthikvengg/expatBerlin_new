@@ -2,9 +2,9 @@ import { PlaceholderPage } from "../components/PlaceholderPage";
 
 export function Success() {
   return (
-    <PlaceholderPage 
+    <PlaceholderPage
       title="Success Stories"
-      description="Read inspiring stories from healthcare professionals who found their dream careers in Germany through Eurocas."
+      description="Read inspiring stories from expats who successfully relocated to Berlin and built new lives with expatBerlin's support."
     />
   );
 }

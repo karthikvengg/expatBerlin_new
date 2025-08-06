@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Header() {
   return (
-    <header className="bg-white shadow-sm">
+    <header className="bg-black shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -24,31 +24,31 @@ export function Header() {
             </Link>
             <Link
               to="/housing"
-              className="text-gray-700 hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
+              className="text-white hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
             >
               Housing
             </Link>
             <Link
               to="/work-permits"
-              className="text-gray-700 hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
+              className="text-white hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
             >
               Work Permits
             </Link>
             <Link
               to="/language-courses"
-              className="text-gray-700 hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
+              className="text-white hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
             >
               Language Courses
             </Link>
             <Link
               to="/about"
-              className="text-gray-700 hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
+              className="text-white hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
             >
               About Us
             </Link>
             <Link
               to="/success"
-              className="text-gray-700 hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
+              className="text-white hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
             >
               Success
             </Link>
@@ -56,7 +56,7 @@ export function Header() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button className="text-gray-700 hover:text-expatberlin-primary p-2">
+            <button className="text-white hover:text-expatberlin-primary p-2">
               <svg
                 className="h-6 w-6"
                 fill="none"

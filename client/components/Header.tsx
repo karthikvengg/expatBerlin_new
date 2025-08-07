@@ -17,7 +17,7 @@ export function Header() {
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F439caad0b8bf4cb493673255e1deb89a%2F155109982c6d422aba193d15b5481e2d?format=webp&width=800"
               alt="expatBerlin Logo"
-              className="h-10 w-auto"
+              className="h-16 w-auto"
             />
             <span className="ml-1 text-white font-bold text-xl pb-1">patBerlin</span>
           </Link>

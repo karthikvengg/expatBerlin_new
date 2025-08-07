@@ -52,7 +52,7 @@ export function HeroSection() {
 
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <button className="bg-white/90 hover:bg-white text-gray-800 rounded-full p-4 shadow-lg transition-all">
+                <button className="bg-gray-100/90 hover:bg-gray-200 text-gray-800 rounded-full p-4 shadow-lg transition-all">
                   <svg
                     className="w-8 h-8 ml-1"
                     fill="currentColor"
@@ -65,7 +65,7 @@ export function HeroSection() {
 
               {/* "Watch on Youtube" Label */}
               <div className="absolute bottom-4 left-4">
-                <div className="bg-white/90 rounded-full px-4 py-2 flex items-center space-x-2">
+                <div className="bg-gray-100/90 rounded-full px-4 py-2 flex items-center space-x-2">
                   <svg
                     className="w-4 h-4"
                     fill="currentColor"

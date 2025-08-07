@@ -14,17 +14,17 @@ export function RatingsSection() {
                 <img
                   src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face"
                   alt="Student 1"
-                  className="w-10 h-10 rounded-full border-2 border-white object-cover"
+                  className="w-10 h-10 rounded-full border-2 border-gray-200 object-cover"
                 />
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face"
                   alt="Student 2"
-                  className="w-10 h-10 rounded-full border-2 border-white object-cover"
+                  className="w-10 h-10 rounded-full border-2 border-gray-200 object-cover"
                 />
                 <img
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=40&h=40&fit=crop&crop=face"
                   alt="Student 3"
-                  className="w-10 h-10 rounded-full border-2 border-white object-cover"
+                  className="w-10 h-10 rounded-full border-2 border-gray-200 object-cover"
                 />
               </div>
 

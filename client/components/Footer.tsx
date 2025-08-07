@@ -1,11 +1,15 @@
+import { useLanguage } from "../contexts/LanguageContext";
+
 export function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Contact Section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Call us or send us an email!
+            {t('contactTitle')}
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
@@ -36,7 +40,7 @@ export function Footer() {
         {/* Advantages Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Your advantages when working with xpatBerlin
+            {t('advantagesTitle')}
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -48,12 +52,12 @@ export function Footer() {
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">No cost</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('noCost')}</h3>
                 <p className="text-gray-600 text-sm">
-                  No placement fee, no payroll deduction, and no show money for the professional!
+                  {t('noCostDesc')}
                 </p>
                 <p className="text-gray-500 text-xs mt-2">
-                  All program services are paid for or sponsored by xpatBerlin.
+                  {t('noCostSubtext')}
                 </p>
               </div>
             </div>
@@ -66,12 +70,12 @@ export function Footer() {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Full support</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('fullSupport')}</h3>
                 <p className="text-gray-600 text-sm">
-                  Comprehensive relocation assistance from visa applications to finding housing.
+                  {t('fullSupportDesc')}
                 </p>
                 <p className="text-gray-500 text-xs mt-2">
-                  We guide you through every step of your Berlin journey.
+                  {t('fullSupportSubtext')}
                 </p>
               </div>
             </div>
@@ -84,12 +88,12 @@ export function Footer() {
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Expert guidance</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('expertGuidance')}</h3>
                 <p className="text-gray-600 text-sm">
-                  Local expertise and personalized advice for a successful integration.
+                  {t('expertGuidanceDesc')}
                 </p>
                 <p className="text-gray-500 text-xs mt-2">
-                  Our team knows Berlin inside and out.
+                  {t('expertGuidanceSubtext')}
                 </p>
               </div>
             </div>
@@ -101,18 +105,18 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-gray-600 text-sm">
-                © 2024 xpatBerlin. All rights reserved.
+                {t('copyright')}
               </p>
             </div>
             <div className="flex space-x-6">
               <a href="/privacy" className="text-gray-600 hover:text-expatberlin-primary text-sm transition-colors">
-                Privacy Policy
+                {t('privacyPolicy')}
               </a>
               <a href="/terms" className="text-gray-600 hover:text-expatberlin-primary text-sm transition-colors">
-                Terms of Service
+                {t('termsOfService')}
               </a>
               <a href="/imprint" className="text-gray-600 hover:text-expatberlin-primary text-sm transition-colors">
-                Imprint
+                {t('imprint')}
               </a>
             </div>
           </div>

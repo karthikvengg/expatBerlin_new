@@ -1,4 +1,8 @@
+import { useLanguage } from "../contexts/LanguageContext";
+
 export function RatingsSection() {
+  const { t } = useLanguage();
+
   return (
     <section className="py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -35,10 +39,10 @@ export function RatingsSection() {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                   <span className="text-lg font-semibold text-gray-700">
-                    Ratings
+                    {t('ratings')}
                   </span>
                 </div>
-                <p className="text-sm text-gray-600 mt-1">From our students</p>
+                <p className="text-sm text-gray-600 mt-1">{t('fromOurStudents')}</p>
               </div>
             </div>
           </div>

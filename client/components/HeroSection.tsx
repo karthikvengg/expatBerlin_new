@@ -1,6 +1,9 @@
 import { Button } from "./ui/button";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export function HeroSection() {
+  const { t } = useLanguage();
+
   return (
     <section className="bg-gray-50 py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,20 +11,17 @@ export function HeroSection() {
           {/* Left Content */}
           <div className="space-y-6">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              Your Trusted Partner for Expat Life in{" "}
-              <span className="text-expatberlin-primary">Berlin</span>
+              {t('heroTitle')}{" "}
+              <span className="text-expatberlin-primary">{t('heroLocation')}</span>
             </h1>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              At expatBerlin, we help international professionals and families
-              navigate their relocation to Berlin. Our comprehensive services
-              ensure a smooth transition, from housing and visa support to
-              language courses and local integration assistance.
+              {t('heroDescription')}
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
               <button className="bg-expatberlin-primary hover:bg-expatberlin-primary-dark text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors">
-                Get Started
+                {t('getStarted')}
               </button>
 
               {/* Airplane Icon */}

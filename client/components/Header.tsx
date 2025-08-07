@@ -1,7 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
+import { useLanguage } from "../contexts/LanguageContext";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
   const location = useLocation();
+  const { t } = useLanguage();
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -29,7 +32,7 @@ export function Header() {
                   : "text-white hover:text-expatberlin-primary"
               }`}
             >
-              Home
+              {t('home')}
             </Link>
             <Link
               to="/housing"
@@ -39,7 +42,7 @@ export function Header() {
                   : "text-white hover:text-expatberlin-primary"
               }`}
             >
-              Housing
+              {t('housing')}
             </Link>
             <Link
               to="/work-permits"
@@ -49,7 +52,7 @@ export function Header() {
                   : "text-white hover:text-expatberlin-primary"
               }`}
             >
-              Work Permits
+              {t('workPermits')}
             </Link>
             <Link
               to="/language-courses"
@@ -59,7 +62,7 @@ export function Header() {
                   : "text-white hover:text-expatberlin-primary"
               }`}
             >
-              Language Courses
+              {t('languageCourses')}
             </Link>
             <Link
               to="/about"
@@ -69,7 +72,7 @@ export function Header() {
                   : "text-white hover:text-expatberlin-primary"
               }`}
             >
-              About Us
+              {t('aboutUs')}
             </Link>
             <Link
               to="/success"
@@ -79,27 +82,32 @@ export function Header() {
                   : "text-white hover:text-expatberlin-primary"
               }`}
             >
-              Success
+              {t('success')}
             </Link>
           </nav>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button className="text-white hover:text-expatberlin-primary p-2">
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
+          {/* Language Switcher and Mobile menu */}
+          <div className="flex items-center space-x-4">
+            <LanguageSwitcher />
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button className="text-white hover:text-expatberlin-primary p-2">
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>

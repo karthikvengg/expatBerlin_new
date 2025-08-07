@@ -58,12 +58,12 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         expatberlin: {
-          primary: "#00D4FF",
-          "primary-light": "#33DDFF",
-          "primary-dark": "#00A8CC",
-          secondary: "#FF0080",
-          "secondary-light": "#FF33A0",
-          "secondary-dark": "#CC0066",
+          primary: "#4169E1",
+          "primary-light": "#6A87E8",
+          "primary-dark": "#2B4BC7",
+          secondary: "#800020",
+          "secondary-light": "#A6334A",
+          "secondary-dark": "#5A0016",
         },
       },
       borderRadius: {

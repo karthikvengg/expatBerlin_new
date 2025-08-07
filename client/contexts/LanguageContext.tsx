@@ -46,7 +46,7 @@ const translations = {
     expertGuidanceDesc:
       "Local expertise and personalized advice for a successful integration.",
     expertGuidanceSubtext: "Our team knows Berlin inside and out.",
-    copyright: "© 2024 xpatBerlin Private Limited. All rights reserved.",
+    copyright: "© 2025 xpatBerlin Private Limited. All rights reserved.",
     privacyPolicy: "Privacy Policy",
     termsOfService: "Terms of Service",
     imprint: "Imprint",
@@ -109,7 +109,7 @@ const translations = {
     expertGuidanceDesc:
       "Lokale Expertise und persönliche Beratung für eine erfolgreiche Integration.",
     expertGuidanceSubtext: "Unser Team kennt Berlin in- und auswendig.",
-    copyright: "© 2024 xpatBerlin Private Limited. Alle Rechte vorbehalten.",
+    copyright: "© 2025 xpatBerlin Private Limited. Alle Rechte vorbehalten.",
     privacyPolicy: "Datenschutzrichtlinie",
     termsOfService: "Nutzungsbedingungen",
     imprint: "Impressum",

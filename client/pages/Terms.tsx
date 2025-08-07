@@ -8,7 +8,7 @@ export function Terms() {
   const content = {
     en: {
       title: "Terms of Service",
-      lastUpdated: "Last updated: January 1, 2024",
+      lastUpdated: "Last updated: January 1, 2025",
       sections: [
         {
           title: "1. Acceptance of Terms",
@@ -42,7 +42,7 @@ export function Terms() {
     },
     de: {
       title: "Nutzungsbedingungen",
-      lastUpdated: "Zuletzt aktualisiert: 1. Januar 2024",
+      lastUpdated: "Zuletzt aktualisiert: 1. Januar 2025",
       sections: [
         {
           title: "1. Annahme der Bedingungen",

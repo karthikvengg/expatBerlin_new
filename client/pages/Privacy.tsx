@@ -8,7 +8,7 @@ export function Privacy() {
   const content = {
     en: {
       title: "Privacy Policy",
-      lastUpdated: "Last updated: January 1, 2024",
+      lastUpdated: "Last updated: January 1, 2025",
       sections: [
         {
           title: "1. Information We Collect",
@@ -38,7 +38,7 @@ export function Privacy() {
     },
     de: {
       title: "Datenschutzerklärung",
-      lastUpdated: "Zuletzt aktualisiert: 1. Januar 2024",
+      lastUpdated: "Zuletzt aktualisiert: 1. Januar 2025",
       sections: [
         {
           title: "1. Informationen, die wir sammeln",

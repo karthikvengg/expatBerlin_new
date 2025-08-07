@@ -7,7 +7,7 @@ export function RatingsSection() {
     <section className="py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-end">
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 max-w-sm">
+          <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl shadow-lg border border-blue-100 p-6 max-w-sm">
             <div className="flex items-center space-x-4">
               {/* Student Images */}
               <div className="flex -space-x-2">

@@ -14,7 +14,7 @@ export function PlaceholderPage({
   const { t } = useLanguage();
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Header />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center">
@@ -22,7 +22,7 @@ export function PlaceholderPage({
             {t(titleKey)}
           </h1>
           <p className="text-xl text-gray-600 mb-8">{t(descriptionKey)}</p>
-          <div className="bg-white rounded-lg shadow-md p-8">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg shadow-md p-8">
             <div className="text-gray-500 mb-4">
               <svg
                 className="w-16 h-16 mx-auto mb-4"

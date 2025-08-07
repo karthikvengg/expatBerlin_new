@@ -1,6 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export function Header() {
+  const location = useLocation();
+
+  const isActive = (path: string) => location.pathname === path;
+
   return (
     <header className="bg-black shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,37 +23,61 @@ export function Header() {
           <nav className="hidden md:flex space-x-8">
             <Link
               to="/"
-              className="text-expatberlin-primary border-b-2 border-expatberlin-primary px-1 py-4 text-sm font-medium"
+              className={`px-1 py-4 text-sm font-medium transition-colors ${
+                isActive("/")
+                  ? "text-expatberlin-primary border-b-2 border-expatberlin-primary"
+                  : "text-white hover:text-expatberlin-primary"
+              }`}
             >
               Home
             </Link>
             <Link
               to="/housing"
-              className="text-white hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
+              className={`px-1 py-4 text-sm font-medium transition-colors ${
+                isActive("/housing")
+                  ? "text-expatberlin-primary border-b-2 border-expatberlin-primary"
+                  : "text-white hover:text-expatberlin-primary"
+              }`}
             >
               Housing
             </Link>
             <Link
               to="/work-permits"
-              className="text-white hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
+              className={`px-1 py-4 text-sm font-medium transition-colors ${
+                isActive("/work-permits")
+                  ? "text-expatberlin-primary border-b-2 border-expatberlin-primary"
+                  : "text-white hover:text-expatberlin-primary"
+              }`}
             >
               Work Permits
             </Link>
             <Link
               to="/language-courses"
-              className="text-white hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
+              className={`px-1 py-4 text-sm font-medium transition-colors ${
+                isActive("/language-courses")
+                  ? "text-expatberlin-primary border-b-2 border-expatberlin-primary"
+                  : "text-white hover:text-expatberlin-primary"
+              }`}
             >
               Language Courses
             </Link>
             <Link
               to="/about"
-              className="text-white hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
+              className={`px-1 py-4 text-sm font-medium transition-colors ${
+                isActive("/about")
+                  ? "text-expatberlin-primary border-b-2 border-expatberlin-primary"
+                  : "text-white hover:text-expatberlin-primary"
+              }`}
             >
               About Us
             </Link>
             <Link
               to="/success"
-              className="text-white hover:text-expatberlin-primary px-1 py-4 text-sm font-medium transition-colors"
+              className={`px-1 py-4 text-sm font-medium transition-colors ${
+                isActive("/success")
+                  ? "text-expatberlin-primary border-b-2 border-expatberlin-primary"
+                  : "text-white hover:text-expatberlin-primary"
+              }`}
             >
               Success
             </Link>

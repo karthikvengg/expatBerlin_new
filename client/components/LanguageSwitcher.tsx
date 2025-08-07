@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useState, useRef, useEffect } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
@@ -8,23 +8,27 @@ export function LanguageSwitcher() {
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     }
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
   const languages = [
-    { code: 'en', name: 'English', flag: '🇬🇧' },
-    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+    { code: "en", name: "English", flag: "🇬🇧" },
+    { code: "de", name: "Deutsch", flag: "🇩🇪" },
   ];
 
-  const currentLanguage = languages.find(lang => lang.code === language) || languages[0];
+  const currentLanguage =
+    languages.find((lang) => lang.code === language) || languages[0];
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -34,12 +38,17 @@ export function LanguageSwitcher() {
       >
         <span className="text-lg">{currentLanguage.flag}</span>
         <svg
-          className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 9l-7 7-7-7"
+          />
         </svg>
       </button>
 
@@ -49,11 +58,13 @@ export function LanguageSwitcher() {
             <button
               key={lang.code}
               onClick={() => {
-                setLanguage(lang.code as 'en' | 'de');
+                setLanguage(lang.code as "en" | "de");
                 setIsOpen(false);
               }}
               className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 flex items-center space-x-2 first:rounded-t-md last:rounded-b-md ${
-                language === lang.code ? 'bg-expatberlin-primary text-white' : 'text-gray-700'
+                language === lang.code
+                  ? "bg-expatberlin-primary text-white"
+                  : "text-gray-700"
               }`}
             >
               <span className="text-lg">{lang.flag}</span>

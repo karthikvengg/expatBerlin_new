@@ -7,7 +7,10 @@ interface PlaceholderPageProps {
   descriptionKey: string;
 }
 
-export function PlaceholderPage({ titleKey, descriptionKey }: PlaceholderPageProps) {
+export function PlaceholderPage({
+  titleKey,
+  descriptionKey,
+}: PlaceholderPageProps) {
   const { t } = useLanguage();
 
   return (
@@ -15,7 +18,9 @@ export function PlaceholderPage({ titleKey, descriptionKey }: PlaceholderPagePro
       <Header />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">{t(titleKey)}</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            {t(titleKey)}
+          </h1>
           <p className="text-xl text-gray-600 mb-8">{t(descriptionKey)}</p>
           <div className="bg-white rounded-lg shadow-md p-8">
             <div className="text-gray-500 mb-4">
@@ -28,11 +33,9 @@ export function PlaceholderPage({ titleKey, descriptionKey }: PlaceholderPagePro
               </svg>
             </div>
             <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-              {t('contentComingSoon')}
+              {t("contentComingSoon")}
             </h2>
-            <p className="text-gray-600 mb-6">
-              {t('pageUnderDevelopment')}
-            </p>
+            <p className="text-gray-600 mb-6">{t("pageUnderDevelopment")}</p>
             <div className="inline-flex items-center px-4 py-2 bg-expatberlin-primary text-white rounded-lg">
               <svg
                 className="w-5 h-5 mr-2"
@@ -41,7 +44,7 @@ export function PlaceholderPage({ titleKey, descriptionKey }: PlaceholderPagePro
               >
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
               </svg>
-              {t('readyForDevelopment')}
+              {t("readyForDevelopment")}
             </div>
           </div>
         </div>

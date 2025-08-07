@@ -32,7 +32,7 @@ export function Header() {
                   : "text-white hover:text-expatberlin-primary"
               }`}
             >
-              {t('home')}
+              {t("home")}
             </Link>
             <Link
               to="/housing"
@@ -42,7 +42,7 @@ export function Header() {
                   : "text-white hover:text-expatberlin-primary"
               }`}
             >
-              {t('housing')}
+              {t("housing")}
             </Link>
             <Link
               to="/work-permits"
@@ -52,7 +52,7 @@ export function Header() {
                   : "text-white hover:text-expatberlin-primary"
               }`}
             >
-              {t('workPermits')}
+              {t("workPermits")}
             </Link>
             <Link
               to="/language-courses"
@@ -62,7 +62,7 @@ export function Header() {
                   : "text-white hover:text-expatberlin-primary"
               }`}
             >
-              {t('languageCourses')}
+              {t("languageCourses")}
             </Link>
             <Link
               to="/about"
@@ -72,7 +72,7 @@ export function Header() {
                   : "text-white hover:text-expatberlin-primary"
               }`}
             >
-              {t('aboutUs')}
+              {t("aboutUs")}
             </Link>
             <Link
               to="/success"
@@ -82,7 +82,7 @@ export function Header() {
                   : "text-white hover:text-expatberlin-primary"
               }`}
             >
-              {t('success')}
+              {t("success")}
             </Link>
           </nav>
 

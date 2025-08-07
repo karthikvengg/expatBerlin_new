@@ -11,17 +11,19 @@ export function HeroSection() {
           {/* Left Content */}
           <div className="space-y-6">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              {t('heroTitle')}{" "}
-              <span className="text-expatberlin-primary">{t('heroLocation')}</span>
+              {t("heroTitle")}{" "}
+              <span className="text-expatberlin-primary">
+                {t("heroLocation")}
+              </span>
             </h1>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              {t('heroDescription')}
+              {t("heroDescription")}
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
               <button className="bg-expatberlin-primary hover:bg-expatberlin-primary-dark text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors">
-                {t('getStarted')}
+                {t("getStarted")}
               </button>
 
               {/* Airplane Icon */}

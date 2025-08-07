@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useState, useEffect } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export function CookieConsent() {
   const { language, t } = useLanguage();
@@ -7,8 +7,8 @@ export function CookieConsent() {
 
   useEffect(() => {
     // Only show for German users and if consent hasn't been given yet
-    if (language === 'de') {
-      const consentGiven = localStorage.getItem('cookieConsent');
+    if (language === "de") {
+      const consentGiven = localStorage.getItem("cookieConsent");
       if (!consentGiven) {
         setShowConsent(true);
       }
@@ -16,12 +16,12 @@ export function CookieConsent() {
   }, [language]);
 
   const handleAccept = () => {
-    localStorage.setItem('cookieConsent', 'accepted');
+    localStorage.setItem("cookieConsent", "accepted");
     setShowConsent(false);
   };
 
   const handleDecline = () => {
-    localStorage.setItem('cookieConsent', 'declined');
+    localStorage.setItem("cookieConsent", "declined");
     setShowConsent(false);
   };
 
@@ -31,12 +31,13 @@ export function CookieConsent() {
 
   const content = {
     de: {
-      title: 'Cookie-Einstellungen',
-      message: 'Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Diese helfen uns, die Website-Leistung zu verstehen und zu verbessern. Sie können Ihre Einstellungen jederzeit ändern.',
-      acceptButton: 'Alle akzeptieren',
-      declineButton: 'Ablehnen',
-      learnMore: 'Mehr erfahren'
-    }
+      title: "Cookie-Einstellungen",
+      message:
+        "Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Diese helfen uns, die Website-Leistung zu verstehen und zu verbessern. Sie können Ihre Einstellungen jederzeit ändern.",
+      acceptButton: "Alle akzeptieren",
+      declineButton: "Ablehnen",
+      learnMore: "Mehr erfahren",
+    },
   };
 
   const text = content.de;
@@ -46,8 +47,12 @@ export function CookieConsent() {
       <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 mb-4 animate-slide-in-from-bottom">
         <div className="flex items-start mb-4">
           <div className="flex-shrink-0 mr-3">
-            <svg className="w-6 h-6 text-expatberlin-primary" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+            <svg
+              className="w-6 h-6 text-expatberlin-primary"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
             </svg>
           </div>
           <div className="flex-1">
@@ -72,8 +77,8 @@ export function CookieConsent() {
               </button>
             </div>
             <div className="mt-3 text-center">
-              <a 
-                href="/privacy" 
+              <a
+                href="/privacy"
                 className="text-sm text-expatberlin-primary hover:text-expatberlin-primary-dark underline"
               >
                 {text.learnMore}

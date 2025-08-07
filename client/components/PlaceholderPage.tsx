@@ -1,4 +1,5 @@
 import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 interface PlaceholderPageProps {
   title: string;
@@ -43,6 +44,7 @@ export function PlaceholderPage({ title, description }: PlaceholderPageProps) {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

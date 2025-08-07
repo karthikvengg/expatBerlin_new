@@ -43,7 +43,7 @@ export function CookieConsent() {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-end justify-center p-4">
-      <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 mb-4 animate-in slide-in-from-bottom-4">
+      <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 mb-4 animate-slide-in-from-bottom">
         <div className="flex items-start mb-4">
           <div className="flex-shrink-0 mr-3">
             <svg className="w-6 h-6 text-expatberlin-primary" fill="currentColor" viewBox="0 0 24 24">
